@@ -107,10 +107,12 @@ var cssTasks = function(filename) {
         'opera 12'
       ]
     })
+    /*
     .pipe(minifyCss, {
       advanced: false,
       rebase: false
     })
+    */
     .pipe(function() {
       return gulpif(enabled.rev, rev());
     })
